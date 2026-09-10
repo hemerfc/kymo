@@ -1,0 +1,9 @@
+# O módulo csv do Python grava CRLF (RFC 4180). Preservar evita que o arquivo
+# mude a cada checkout só por causa da normalização de fim de linha.
+*.csv text eol=crlf
+
+# Binários: sem normalização e sem tentativa de diff textual.
+*.npy binary
+*.xlsx binary
+*.mp4 binary
+*.MP4 binary

@@ -1,0 +1,25 @@
+[project]
+name = "kymo"
+version = "0.2.0"
+description = "Vazão de esteiras medida a partir de vídeo, sem instrumentar a linha"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "opencv-python>=4.9",
+    "numpy>=1.26",
+    "openpyxl>=3.1",
+]
+
+[project.scripts]
+# Instalado em modo editável, o comando fica disponível de qualquer diretório —
+# que é o que a ferramenta precisa: os dados de cada ensaio moram fora da
+# árvore de código, e é de dentro da pasta do ensaio que se roda a análise.
+kymo = "kymo.cli:main"
+kymo-sincronizar = "kymo.sincronizar:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["kymo"]

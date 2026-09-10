@@ -1,0 +1,92 @@
+{
+  "video": "ensaio.mp4",
+  "linha": {
+    "x1": 640,
+    "y1": 268,
+    "x2": 640,
+    "y2": 405,
+    "sentido": "ambos",
+    "nome": "gate"
+  },
+  "roi": {
+    "x": 0,
+    "y": 260,
+    "largura": 1280,
+    "altura": 150,
+    "poligono": [
+      [
+        0,
+        268
+      ],
+      [
+        1280,
+        268
+      ],
+      [
+        1280,
+        405
+      ],
+      [
+        0,
+        405
+      ]
+    ]
+  },
+  "cor": {
+    "modo": "lab",
+    "b_min": 1,
+    "b_max": 28,
+    "a_min": -10,
+    "a_max": 25,
+    "l_min": 60,
+    "l_max": 255,
+    "h_min": 8,
+    "h_max": 32,
+    "s_min": 25,
+    "s_max": 255,
+    "v_min": 70,
+    "v_max": 255,
+    "incluir_claros": true,
+    "claro_l_min": 190,
+    "claro_l_max": 255,
+    "claro_a_min": -12,
+    "claro_a_max": 12,
+    "claro_b_min": -12,
+    "claro_b_max": 12
+  },
+  "deteccao": {
+    "modo": "gate",
+    "escala_processamento": 1.0,
+    "gate_largura": 30,
+    "gate_suavizacao": 1,
+    "gate_limiar_ocupado": 0.25,
+    "gate_limiar_vazio": 0.1,
+    "gate_min_vazio_s": 0.06,
+    "gate_min_ocupado_s": 0.033,
+    "gate_referencia_percentil": 90.0,
+    "gate_nivel_referencia": null,
+    "gate_borda": "subida",
+    "area_min": 900,
+    "area_max": 200000,
+    "abertura": 3,
+    "fechamento": 7,
+    "comprimento_pacote": 0,
+    "tolerancia_divisao": 1.45,
+    "usar_subtracao_fundo": true,
+    "historico_fundo": 500,
+    "limiar_fundo": 16,
+    "decaimento_movimento": 0.9995,
+    "limiar_memoria": 0.1,
+    "dilatacao_memoria": 31,
+    "distancia_max_associacao": 24.0,
+    "frames_para_perder": 20,
+    "deslocamento_min_para_contar": 10.0,
+    "idade_min_para_contar": 4,
+    "velocidade_max_para_contar": 220.0
+  },
+  "inicio": 0.0,
+  "duracao": null,
+  "limite_gap_alerta": 20.0,
+  "mini": null,
+  "mini_offset": 0.0
+}

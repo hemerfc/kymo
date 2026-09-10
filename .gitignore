@@ -1,0 +1,26 @@
+# Dados de ensaio: vídeo, configuração, resultados. Ficam fora da árvore de
+# código de propósito — cada medição é de um cliente identificável, e o nome do
+# arquivo e o caminho do ensaio já são dado de cliente. Um ensaio por pasta.
+projetos/
+
+# Vídeos, onde quer que estejam. Um GO PRO de linha inteira passa de 7 GB e os
+# renders com OSD passam de 1 GB; ambos são reproduzíveis a partir do código,
+# do config e do CSV.
+*.mp4
+*.MP4
+*.mov
+*.MOV
+*.avi
+*.mkv
+
+# Ambiente e build
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Sistema
+.DS_Store
